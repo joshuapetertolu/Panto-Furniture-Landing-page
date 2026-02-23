@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Panto Furniture</title>
     <!-- Tailwind Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -30,45 +32,114 @@
     <section></section>
 
     <!-- Best Selling Products Section -->
-    <section>
-      <div class="flex flex-col items-center">
-        <h1
-          class="text-[2.2rem] font-extrabold px-2 mt-[3.1rem] text-[#1E1E1E]"
-        >
-          Best Selling Product
-        </h1>
-        <ul
-          class="flex justify-center items-center bg-[#EEEEEE] rounded-full text-[1.2rem] py-[0.5rem] px-[0.5rem] mt-[2rem]"
-        >
-          <li
-            class="rounded-full px-[1.2rem] py-[0.8rem] hover:text-[#E58411] active:bg-[#FFFFFF] active:text-[#1E1E1E]"
-          >
-            <a href="./tabs/chairs.html" target="the screen">Chairs</a>
-          </li>
-          <li
-            class="rounded-full px-[1.2rem] py-[0.8rem] hover:text-[#E58411] active:bg-[#FFFFFF] active:text-[#1E1E1E]"
-          >
-            <a href="./tabs/beds.html" target="the screen">Beds</a>
-          </li>
-          <li
-            class="rounded-full px-[1.2rem] py-[0.8rem] hover:text-[#E58411] active:bg-[#FFFFFF] active:text-[#1E1E1E]"
-          >
-            <a href="./tabs/sofa.html" target="the screen">Sofa</a>
-          </li>
-          <li
-            class="rounded-full px-[1.2rem] py-[0.8rem] hover:text-[#E58411] active:bg-[#FFFFFF] active:text-[#1E1E1E]"
-          >
-            <a href="./tabs/lamps.html" target="the screen">Lamp</a>
-          </li>
-        </ul>
+    <section class="bg-[#F7F7F7] py-7">
+        <h1 class="text-center text-[#1E1E1E] font-bold text-[2.5rem] mt-4">Best Selling Product</h1>
+        <div class="flex justify-center mt-8">
+          <div class="flex flex-rol space-x-1 border-1 rounded-full bg-[#EEEEEE] py-2 px-2 justify-center items-center">
+          <h2 class="bg-[#FFFFFF] px-5 py-3  rounded-3xl border-1 hover:text-[#E58411]">Chairs</h2>
+          <h2 class="px-5 py-3 rounded-3xl border-1 hover:text-[#E58411]">Beds</h2>
+          <h2 class="px-5 py-3 rounded-3xl border-1 hover:text-[#E58411]">Sofa</h2>
+          <h2 class="px-5 py-3 rounded-3xl border-1 hover:text-[#E58411]">Lamps</h2>
+      </div>
+        </div>
 
-        <!-- IFRAME -->
-        <iframe
-          name="the screen"
-          class="h-[70vh] w-[150vh] border-none"
-          src="./tabs/chairs.html"
-          frameborder="0"
-        ></iframe>
+        <div class="absolute left-0 mt-[12rem] ml-[17rem] hidden lg:block"><i class="fa-solid fa-arrow-left-long border-1 bg-white w-12 h-12 p-4 rounded-full"></i></div>
+         <div class="absolute right-0 mt-[12rem] mr-[17rem] hidden lg:block"><i class="fa-solid fa-arrow-right-long border-1 bg-white w-12 h-12 p-4 rounded-full"></i></div>
+         
+         
+        <div class="grid justify-center mt-12 gap-3 md:grid-cols-2 md:place-items-center md:mx-[8rem] lg:grid-cols-4 lg:mx-[18rem]">
+            <div>
+              <div class="bg-gray-100 border-1 p-2 rounded-t-xl max-w-[12rem]"><img src="./assets/images/chair-1.png" class="h-[12rem] w-[12rem]"></div>
+            <div class="p-3 bg-white border-1 max-w-[12rem] rounded-b-xl">
+              <h6 class="text-xs text-[#8D8D8D]">Chairs</h6>
+              <h6 class="font-bold text-[#0D1B39]">Sakarias Armchair</h6>
+              <div class="text-yellow-600 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+                   <div class="flex justify-between mt-4">
+            <div class="flex flex-row gap-0.5"><h6 class="text-[0.9rem] mb-[0.2rem] font-bold">$</h6>
+            <span class="text-[1.2rem] font-bold">392</span></div>
+            <i class="fa-solid fa-circle-plus text-2xl text-[#0D1B39]"></i>
+          </div>
+            </div>
+          </div>
+
+          <!-- second div -->
+
+          <div>
+              <div class="bg-gray-100 border-1 p-2 rounded-t-xl max-w-[12rem]"><img src="./assets/images/chair-2.png" class="h-[12rem] w-[12rem]"></div>
+            <div class="p-3 bg-white border-1 max-w-[12rem] rounded-b-xl">
+              <h6 class="text-xs text-[#8D8D8D]">Chairs</h6>
+              <h6 class="font-bold text-[#0D1B39]">Baltsar chair</h6>
+              <div class="text-yellow-600 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+                   <div class="flex justify-between mt-4">
+            <div class="flex flex-row gap-0.5"><h6 class="text-[0.9rem] mb-[0.2rem] font-bold">$</h6>
+            <span class="text-[1.2rem] font-bold">219</span></div>
+            <i class="fa-solid fa-circle-plus text-2xl text-[#0D1B39]"></i>
+          </div>
+            </div>
+          </div>
+
+          <!-- third div -->
+
+          <div>
+              <div class="bg-gray-100 border-1 p-2 rounded-t-xl max-w-[12rem]"><img src="./assets/images/chair-3.png" class="h-[12rem] w-[12rem]"></div>
+            <div class="p-3 bg-white border-1 max-w-[12rem] rounded-b-xl">
+              <h6 class="text-xs text-[#8D8D8D]">Chairs</h6>
+              <h6 class="font-bold text-[#0D1B39]">Anjay chair</h6>
+              <div class="text-yellow-600 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+                   <div class="flex justify-between mt-4">
+            <div class="flex flex-row gap-0.5"><h6 class="text-[0.9rem] mb-[0.2rem] font-bold">$</h6>
+            <span class="text-[1.2rem] font-bold">519</span></div>
+            <i class="fa-solid fa-circle-plus text-2xl text-[#0D1B39]"></i>
+          </div>
+            </div>
+          </div>
+
+          <!-- fourth div -->
+
+          <div>
+              <div class="bg-gray-100 border-1 p-2 rounded-t-xl max-w-[12rem]"><img src="./assets/images/chair-4.png" class="h-[12rem] w-[12rem]"></div>
+            <div class="p-3 bg-white border-1 max-w-[12rem] rounded-b-xl">
+              <h6 class="text-xs text-[#8D8D8D]">Chairs</h6>
+              <h6 class="font-bold text-[#0D1B39]">Nyantuy chair</h6>
+              <div class="text-yellow-600 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+                   <div class="flex justify-between mt-4">
+            <div class="flex flex-row gap-0.5"><h6 class="text-[0.9rem] mb-[0.2rem] font-bold">$</h6>
+            <span class="text-[1.2rem] font-bold">921</span></div>
+            <i class="fa-solid fa-circle-plus text-2xl text-[#0D1B39]"></i>
+          </div>
+            </div>
+          </div>
+
+            </div>
+
+                <div class="flex flex-rol gap-3 mt-[3.8rem] justify-center">
+          <h5 class="text-[#E58411]">View all</h5>
+          <i class="fa-solid fa-arrow-right-long mt-1 text-[#E58411]"></i>
+        </div>
       </div>
     </section>
 
