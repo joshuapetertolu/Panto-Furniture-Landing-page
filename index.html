@@ -65,7 +65,7 @@
   <body class="bg-[#ffffff] font-gilroy overflow-x-hidden">
     <!-- Hero & Header Wrapper -->
     <div
-      class="relative min-h-[130vh] bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-cover bg-center"
+      class="relative min-h-[850px] lg:min-h-[1000px] bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-cover bg-center"
     >
       <!-- Header Section -->
       <header id="header" class="w-full absolute top-0 left-0 z-50">
@@ -119,7 +119,7 @@
 
       <!-- Hero Content -->
       <main
-        class="relative z-10 flex flex-col items-center justify-start min-h-[120vh] pt-20 md:pt-40 lg:pt-52 px-4 text-center"
+        class="relative z-10 flex flex-col items-center justify-start pb-32 lg:pb-0 lg:min-h-[850px] pt-20 md:pt-40 lg:pt-52 px-4 text-center"
       >
         <h1
           class="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 max-w-5xl"
@@ -157,7 +157,7 @@
 
         <!-- Tooltip Widget -->
         <div
-          class="absolute top-[52%] left-[18%] z-20 bg-white/10 backdrop-blur-md p-2 rounded-full flex gap-3 border border-white/20 shadow-2xl scale-125"
+          class="hidden md:flex absolute top-[52%] left-[18%] z-20 bg-white/10 backdrop-blur-md p-2 rounded-full gap-3 border border-white/20 shadow-2xl scale-125"
         >
           <div
             class="w-6 h-6 rounded-full bg-[#E58411] flex items-center justify-center cursor-pointer shadow-inner"
@@ -174,7 +174,9 @@
 
         <!-- Interaction Dots -->
         <!-- Dot on Sofa Back -->
-        <div class="absolute top-[63%] left-[21%] z-20 cursor-pointer group">
+        <div
+          class="hidden md:block absolute top-[63%] left-[21%] z-20 cursor-pointer group"
+        >
           <div class="w-10 h-10 flex items-center justify-center relative">
             <div
               class="absolute inset-0 bg-white/10 rounded-full animate-ping opacity-50"
@@ -188,7 +190,9 @@
         </div>
 
         <!-- Dot on Sofa Seat -->
-        <div class="absolute top-[67%] left-[34%] z-20 cursor-pointer group">
+        <div
+          class="hidden md:block absolute top-[67%] left-[34%] z-20 cursor-pointer group"
+        >
           <img
             src="assets/images/the-spreaded-dots.png"
             alt="Info Dot"
@@ -197,7 +201,9 @@
         </div>
 
         <!-- Dot on Lamp/Far Left -->
-        <div class="absolute top-[75%] left-[8%] z-20 cursor-pointer group">
+        <div
+          class="hidden md:block absolute top-[75%] left-[8%] z-20 cursor-pointer group"
+        >
           <img
             src="assets/images/the-left-sided-dots.png"
             alt="Info Dot"
@@ -206,7 +212,9 @@
         </div>
 
         <!-- Dot on Far Right -->
-        <div class="absolute top-[76%] right-[5%] z-20 cursor-pointer group">
+        <div
+          class="hidden md:block absolute top-[76%] right-[5%] z-20 cursor-pointer group"
+        >
           <img
             src="assets/images/the-spreaded-dots.png"
             alt="Info Dot"
@@ -307,20 +315,22 @@
     </section>
 
     <!-- Best Selling Products Section -->
-    <section class="bg-[#F7F7F7] py-16">
+    <section class="bg-[#F7F7F7] py-20">
       <div class="container mx-auto px-6 lg:px-0">
         <!-- Title -->
-        <div class="text-center">
-          <h2 class="text-[22px] md:text-[26px] font-bold text-[#1E1E1E]">
-            Best Selling Product
-          </h2>
+        <h2
+          class="text-center text-[#1E1E1E] font-bold text-[22px] md:text-[26px]"
+        >
+          Best Selling Product
+        </h2>
 
-          <!-- Tabs -->
+        <!-- Tabs -->
+        <div class="mt-6 flex justify-center">
           <div
-            class="bg-white mt-5 inline-flex items-center gap-2 bg-white/70 rounded-full p-1 shadow-sm"
+            class="flex items-center gap-1 bg-[#EEEEEE] rounded-full p-1 overflow-x-auto max-w-full"
           >
             <button
-              class="px-5 py-2 rounded-full bg-white text-[13px] text-[#1E1E1E] font-medium shadow"
+              class="px-5 py-2 rounded-full bg-white text-[13px] text-[#1E1E1E] font-medium shadow-[0_6px_16px_rgba(0,0,0,0.08)]"
             >
               Chair
             </button>
@@ -342,386 +352,214 @@
           </div>
         </div>
 
-        <!-- Slider Area -->
+        <!-- Cards area -->
         <div class="relative mt-14">
-          <!-- Left Arrow -->
+          <!-- Left arrow -->
           <button
             aria-label="Previous"
-            class="hidden md:flex absolute left-[-18px] top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white shadow-md items-center justify-center"
+            class="hidden lg:flex absolute left-[-22px] top-[44%] -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-[0_18px_40px_rgba(0,0,0,0.12)] items-center justify-center"
           >
-            <!-- use your left arrow icon -->
-            <img src="assets/icons/arrow-left.png" alt="Prev" class="w-4 h-4" />
+            <i
+              class="fa-solid fa-arrow-left-long text-[#1E1E1E] text-[14px]"
+            ></i>
           </button>
 
-          <!-- Right Arrow -->
+          <!-- Right arrow -->
           <button
             aria-label="Next"
-            class="hidden md:flex absolute right-[-18px] top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white shadow-md items-center justify-center"
+            class="hidden lg:flex absolute right-[-22px] top-[44%] -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-[0_18px_40px_rgba(0,0,0,0.12)] items-center justify-center"
           >
-            <!-- use your right arrow icon -->
-            <img
-              src="assets/icons/arrow-right.png"
-              alt="Next"
-              class="w-4 h-4"
-            />
+            <i
+              class="fa-solid fa-arrow-right-long text-[#1E1E1E] text-[14px]"
+            ></i>
           </button>
 
-          <!-- Cards Row -->
-          <div class="overflow-hidden">
-            <div class="flex gap-6 md:gap-8 justify-center">
-              <!-- Card 1 -->
-              <div class="w-[270px]">
-                <div
-                  class="bg-white rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.06)] transition hover:-translate-y-2 duration-300"
-                >
-                  <!-- Image Area (taller) -->
-                  <div
-                    class="h-[250px] bg-white flex items-end justify-center pt-6"
-                  >
-                    <img
-                      src="assets/images/chair-1.png"
-                      alt="Sakarias Armchair"
-                      class="h-[210px] object-contain drop-shadow-[0_25px_30px_rgba(0,0,0,0.15)]"
-                    />
-                  </div>
-
-                  <!-- Info Section -->
-                  <div class="px-6 pt-5 pb-6 border-t border-[#F1F1F1]">
-                    <p class="text-[12px] text-[#9A9A9A] mb-1">Chair</p>
-
-                    <h3 class="text-[15px] font-semibold text-[#1E1E1E]">
-                      Sakarias Armchair
-                    </h3>
-
-                    <!-- Stars -->
-                    <div class="flex items-center gap-1 mt-2">
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                    </div>
-
-                    <!-- Price + Button -->
-                    <div class="mt-6 flex items-center justify-between">
-                      <div class="text-[16px] font-semibold text-[#1E1E1E]">
-                        <span class="text-[12px]">$</span> 392
-                      </div>
-
-                      <button
-                        class="w-11 h-11 rounded-full bg-[#0D1B39] text-white flex items-center justify-center text-[20px] leading-none transition hover:bg-[#162750]"
-                      >
-                        +
-                      </button>
-                    </div>
-                  </div>
-                </div>
+          <!-- Grid -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 place-items-center"
+          >
+            <!-- Card 1 -->
+            <div
+              class="w-[260px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+            >
+              <!-- Image top -->
+              <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
+                <img
+                  src="./assets/images/chair-1.png"
+                  alt="Sakarias Armchair"
+                  class="h-[165px] w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
+                />
               </div>
 
-              <!-- Card 2 -->
-              <div class="w-[270px]">
-                <div
-                  class="bg-white rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.06)] transition hover:-translate-y-2 duration-300"
+              <!-- Content bottom -->
+              <div class="px-5 pt-4 pb-5">
+                <p class="text-[12px] text-[#8D8D8D] mb-1">Chair</p>
+                <h3
+                  class="text-[14px] font-semibold text-[#0D1B39] leading-snug"
                 >
-                  <!-- Image Area (taller) -->
-                  <div
-                    class="h-[250px] bg-white flex items-end justify-center pt-6"
+                  Sakarias Armchair
+                </h3>
+
+                <div
+                  class="mt-2 flex items-center gap-1 text-[#F6B76A] text-[12px]"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star text-[#F6B76A]/40"></i>
+                </div>
+
+                <div class="mt-6 flex items-center justify-between">
+                  <div class="text-[#0D1B39] font-semibold">
+                    <span class="text-[12px] align-top">$</span>
+                    <span class="text-[16px] ml-1">392</span>
+                  </div>
+
+                  <button
+                    aria-label="Add to cart"
+                    class="w-11 h-11 rounded-full bg-[#0D1B39] text-white flex items-center justify-center text-[22px] leading-none"
                   >
-                    <img
-                      src="assets/images/chair-1.png"
-                      alt="Sakarias Armchair"
-                      class="h-[210px] object-contain drop-shadow-[0_25px_30px_rgba(0,0,0,0.15)]"
-                    />
-                  </div>
-
-                  <!-- Info Section -->
-                  <div class="px-6 pt-5 pb-6 border-t border-[#F1F1F1]">
-                    <p class="text-[12px] text-[#9A9A9A] mb-1">Chair</p>
-
-                    <h3 class="text-[15px] font-semibold text-[#1E1E1E]">
-                      Sakarias Armchair
-                    </h3>
-
-                    <!-- Stars -->
-                    <div class="flex items-center gap-1 mt-2">
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                    </div>
-
-                    <!-- Price + Button -->
-                    <div class="mt-6 flex items-center justify-between">
-                      <div class="text-[16px] font-semibold text-[#1E1E1E]">
-                        <span class="text-[12px]">$</span> 392
-                      </div>
-
-                      <button
-                        class="w-11 h-11 rounded-full bg-[#0D1B39] text-white flex items-center justify-center text-[20px] leading-none transition hover:bg-[#162750]"
-                      >
-                        +
-                      </button>
-                    </div>
-                  </div>
+                    +
+                  </button>
                 </div>
               </div>
+            </div>
 
-              <!-- Card 3 -->
-              <div class="w-[270px]">
-                <div
-                  class="bg-white rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.06)] transition hover:-translate-y-2 duration-300"
-                >
-                  <!-- Image Area (taller) -->
-                  <div
-                    class="h-[250px] bg-white flex items-end justify-center pt-6"
-                  >
-                    <img
-                      src="assets/images/chair-1.png"
-                      alt="Sakarias Armchair"
-                      class="h-[210px] object-contain drop-shadow-[0_25px_30px_rgba(0,0,0,0.15)]"
-                    />
-                  </div>
-
-                  <!-- Info Section -->
-                  <div class="px-6 pt-5 pb-6 border-t border-[#F1F1F1]">
-                    <p class="text-[12px] text-[#9A9A9A] mb-1">Chair</p>
-
-                    <h3 class="text-[15px] font-semibold text-[#1E1E1E]">
-                      Sakarias Armchair
-                    </h3>
-
-                    <!-- Stars -->
-                    <div class="flex items-center gap-1 mt-2">
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                    </div>
-
-                    <!-- Price + Button -->
-                    <div class="mt-6 flex items-center justify-between">
-                      <div class="text-[16px] font-semibold text-[#1E1E1E]">
-                        <span class="text-[12px]">$</span> 392
-                      </div>
-
-                      <button
-                        class="w-11 h-11 rounded-full bg-[#0D1B39] text-white flex items-center justify-center text-[20px] leading-none transition hover:bg-[#162750]"
-                      >
-                        +
-                      </button>
-                    </div>
-                  </div>
-                </div>
+            <!-- Card 2 -->
+            <div
+              class="w-[260px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+            >
+              <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
+                <img
+                  src="./assets/images/chair-2.png"
+                  alt="Baltsar Chair"
+                  class="h-[165px] w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
+                />
               </div>
 
-              <!-- Card 4 -->
-              <div class="w-[270px]">
-                <div
-                  class="bg-white rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.06)] transition hover:-translate-y-2 duration-300"
+              <div class="px-5 pt-4 pb-5">
+                <p class="text-[12px] text-[#8D8D8D] mb-1">Chair</p>
+                <h3
+                  class="text-[14px] font-semibold text-[#0D1B39] leading-snug"
                 >
-                  <!-- Image Area (taller) -->
-                  <div
-                    class="h-[250px] bg-white flex items-end justify-center pt-6"
+                  Baltsar Chair
+                </h3>
+
+                <div
+                  class="mt-2 flex items-center gap-1 text-[#F6B76A] text-[12px]"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star text-[#F6B76A]/40"></i>
+                </div>
+
+                <div class="mt-6 flex items-center justify-between">
+                  <div class="text-[#0D1B39] font-semibold">
+                    <span class="text-[12px] align-top">$</span>
+                    <span class="text-[16px] ml-1">299</span>
+                  </div>
+
+                  <button
+                    aria-label="Add to cart"
+                    class="w-11 h-11 rounded-full bg-[#0D1B39] text-white flex items-center justify-center text-[22px] leading-none"
                   >
-                    <img
-                      src="assets/images/chair-1.png"
-                      alt="Sakarias Armchair"
-                      class="h-[210px] object-contain drop-shadow-[0_25px_30px_rgba(0,0,0,0.15)]"
-                    />
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="w-[260px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+            >
+              <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
+                <img
+                  src="./assets/images/chair-3.png"
+                  alt="Anjay Chair"
+                  class="h-[165px] w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
+                />
+              </div>
+
+              <div class="px-5 pt-4 pb-5">
+                <p class="text-[12px] text-[#8D8D8D] mb-1">Chair</p>
+                <h3
+                  class="text-[14px] font-semibold text-[#0D1B39] leading-snug"
+                >
+                  Anjay Chair
+                </h3>
+
+                <div
+                  class="mt-2 flex items-center gap-1 text-[#F6B76A] text-[12px]"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star text-[#F6B76A]/40"></i>
+                </div>
+
+                <div class="mt-6 flex items-center justify-between">
+                  <div class="text-[#0D1B39] font-semibold">
+                    <span class="text-[12px] align-top">$</span>
+                    <span class="text-[16px] ml-1">519</span>
                   </div>
 
-                  <!-- Info Section -->
-                  <div class="px-6 pt-5 pb-6 border-t border-[#F1F1F1]">
-                    <p class="text-[12px] text-[#9A9A9A] mb-1">Chair</p>
+                  <button
+                    aria-label="Add to cart"
+                    class="w-11 h-11 rounded-full bg-[#0D1B39] text-white flex items-center justify-center text-[22px] leading-none"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
 
-                    <h3 class="text-[15px] font-semibold text-[#1E1E1E]">
-                      Sakarias Armchair
-                    </h3>
+            <!-- Card 4 -->
+            <div
+              class="w-[260px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+            >
+              <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
+                <img
+                  src="./assets/images/chair-4.png"
+                  alt="Nyantuy Chair"
+                  class="h-[165px] w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
+                />
+              </div>
 
-                    <!-- Stars -->
-                    <div class="flex items-center gap-1 mt-2">
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3.5 h-3.5"
-                        viewBox="0 0 24 24"
-                        fill="#F6B76A"
-                      >
-                        <path
-                          d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.76 1.64 7.03z"
-                        />
-                      </svg>
-                    </div>
+              <div class="px-5 pt-4 pb-5">
+                <p class="text-[12px] text-[#8D8D8D] mb-1">Chair</p>
+                <h3
+                  class="text-[14px] font-semibold text-[#0D1B39] leading-snug"
+                >
+                  Nyantuy Chair
+                </h3>
 
-                    <!-- Price + Button -->
-                    <div class="mt-6 flex items-center justify-between">
-                      <div class="text-[16px] font-semibold text-[#1E1E1E]">
-                        <span class="text-[12px]">$</span> 392
-                      </div>
+                <div
+                  class="mt-2 flex items-center gap-1 text-[#F6B76A] text-[12px]"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star text-[#F6B76A]/40"></i>
+                </div>
 
-                      <button
-                        class="w-11 h-11 rounded-full bg-[#0D1B39] text-white flex items-center justify-center text-[20px] leading-none transition hover:bg-[#162750]"
-                      >
-                        +
-                      </button>
-                    </div>
+                <div class="mt-6 flex items-center justify-between">
+                  <div class="text-[#0D1B39] font-semibold">
+                    <span class="text-[12px] align-top">$</span>
+                    <span class="text-[16px] ml-1">921</span>
                   </div>
+
+                  <button
+                    aria-label="Add to cart"
+                    class="w-11 h-11 rounded-full bg-[#0D1B39] text-white flex items-center justify-center text-[22px] leading-none"
+                  >
+                    +
+                  </button>
                 </div>
               </div>
             </div>
@@ -729,19 +567,13 @@
         </div>
 
         <!-- View All -->
-        <div class="mt-14 flex items-center justify-center">
-          <a
-            href="#"
-            class="inline-flex items-center gap-3 text-[#E58411] text-[13px] font-medium"
+        <div class="mt-14 flex items-center justify-center gap-3">
+          <a href="#" class="text-[#E58411] text-[13px] font-medium"
+            >View All</a
           >
-            View All
-            <!-- use your small orange arrow icon if you have it -->
-            <img
-              src="assets/icons/arrow-forward.png"
-              alt="Arrow"
-              class="w-6 h-6"
-            />
-          </a>
+          <i
+            class="fa-solid fa-arrow-right-long text-[#E58411] text-[14px]"
+          ></i>
         </div>
       </div>
     </section>
@@ -945,7 +777,7 @@
                 <img
                   src="assets/images/user-1.png"
                   alt="Client room"
-                  class="w-full h-[460px] object-cover object-bottom"
+                  class="w-full h-[350px] md:h-[460px] object-cover object-bottom"
                 />
 
                 <!-- Review panel -->
@@ -1001,7 +833,7 @@
                 <img
                   src="assets/images/user-2.png"
                   alt="Client room"
-                  class="w-full h-[460px] object-cover object-bottom"
+                  class="w-full h-[350px] md:h-[460px] object-cover object-bottom"
                 />
 
                 <div
@@ -1054,7 +886,7 @@
                 <img
                   src="assets/images/user-3.png"
                   alt="Client room"
-                  class="w-full h-[460px] object-cover object-bottom"
+                  class="w-full h-[350px] md:h-[460px] object-cover object-bottom"
                 />
 
                 <div
@@ -1212,7 +1044,6 @@
           class="mt-20 flex flex-col md:flex-row items-center justify-between gap-6"
         >
           <p class="text-[12px] text-[#9A9A9A]">Copyright © 2021</p>
-
           <div class="flex items-center gap-10 text-[12px] text-[#1E1E1E]/70">
             <a href="#" class="hover:text-[#1E1E1E]">Terms &amp; Conditions</a>
             <a href="#" class="hover:text-[#1E1E1E]">Privacy Policy</a>
