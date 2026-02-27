@@ -145,7 +145,7 @@
 
       <!-- Hero Content -->
       <main
-        class="relative z-10 flex flex-col items-center justify-start min-h-[120vh] pt-20 md:pt-40 lg:pt-52 px-4 text-center"
+        class="relative z-10 flex flex-col items-center justify-start pb-32 lg:pb-0 lg:min-h-[850px] pt-20 md:pt-40 lg:pt-52 px-4 text-center"
       >
         <h1
           class="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 max-w-5xl"
@@ -183,7 +183,7 @@
 
         <!-- Tooltip Widget -->
         <div
-          class="absolute top-[52%] left-[18%] z-20 bg-white/10 backdrop-blur-md p-2 rounded-full flex gap-3 border border-white/20 shadow-2xl scale-125"
+          class="hidden md:flex absolute top-[52%] left-[18%] z-20 bg-white/10 backdrop-blur-md p-2 rounded-full gap-3 border border-white/20 shadow-2xl scale-125"
         >
           <div
             class="w-6 h-6 rounded-full bg-[#E58411] flex items-center justify-center cursor-pointer shadow-inner"
@@ -200,7 +200,9 @@
 
         <!-- Interaction Dots -->
         <!-- Dot on Sofa Back -->
-        <div class="absolute top-[63%] left-[21%] z-20 cursor-pointer group">
+        <div
+          class="hidden md:block absolute top-[63%] left-[21%] z-20 cursor-pointer group"
+        >
           <div class="w-10 h-10 flex items-center justify-center relative">
             <div
               class="absolute inset-0 bg-white/10 rounded-full animate-ping opacity-50"
@@ -214,7 +216,9 @@
         </div>
 
         <!-- Dot on Sofa Seat -->
-        <div class="absolute top-[67%] left-[34%] z-20 cursor-pointer group">
+        <div
+          class="hidden md:block absolute top-[67%] left-[34%] z-20 cursor-pointer group"
+        >
           <img
             src="assets/images/the-spreaded-dots.png"
             alt="Info Dot"
@@ -223,7 +227,9 @@
         </div>
 
         <!-- Dot on Lamp/Far Left -->
-        <div class="absolute top-[75%] left-[8%] z-20 cursor-pointer group">
+        <div
+          class="hidden md:block absolute top-[75%] left-[8%] z-20 cursor-pointer group"
+        >
           <img
             src="assets/images/the-left-sided-dots.png"
             alt="Info Dot"
@@ -232,33 +238,41 @@
         </div>
 
         <!-- Dot on Far Right -->
-        <div class="absolute top-[76%] right-[5%] z-20 cursor-pointer group">
+        <div
+          class="hidden md:block absolute top-[76%] right-[5%] z-20 cursor-pointer group"
+        >
           <img
             src="assets/images/the-spreaded-dots.png"
             alt="Info Dot"
             class="w-8 h-8 group-hover:scale-110 transition-transform opacity-95"
           />
         </div>
-
-        <!-- Section Transition (Soft White Fade) -->
-        <div
-          class="absolute -bottom-20 left-0 w-full h-24 bg-gradient-to-t from-white via-white/40 to-transparent"
-        ></div>
       </main>
     </div>
 
     <!-- why choosing us -->
-    <section class="bg-white py-24">
-      <div class="container mx-auto px-6 lg:px-0">
-        <div
-          class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-14"
-        >
-          <!-- Left Title -->
-          <div class="lg:w-[280px]">
-            <h2 class="text-[40px] leading-[1.1] font-bold text-[#1E1E1E]">
-              Why<br />
-              Choosing Us
-            </h2>
+    <section></section>
+
+    <!-- Best Selling Products Section -->
+    <section></section>
+
+    <!-- Experience Section -->
+    <section></section>
+
+    <!-- Our Materials Section -->
+    <section class="bg-gray-100 ml-10 py-20">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Left Content -->
+        <div>
+          <p
+            class="text-sm tracking-[0.3em] text-orange-400 line-height:-[100%] leading-loose font-semibold mb-6"
+          >
+            MATERIALS
+          </p>
+          <div class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h1 class="mb-2">Very Serious</h1>
+            <h1 class="mb-2">Materials For Making</h1>
+            <h1 class="mb-2">Furniture</h1>
           </div>
 
           <!-- Right Columns -->
@@ -313,7 +327,7 @@
               </h3>
               <p class="text-[14px] leading-[2.0] text-[#7A7A7A] mb-8">
                 We provide many unique work space choices so that you can choose
-                the workspace to your liking.
+                the workspace to your <br />liking.
               </p>
 
               <a
@@ -344,7 +358,9 @@
 
         <!-- Tabs -->
         <div class="mt-6 flex justify-center">
-          <div class="flex items-center gap-1 bg-[#EEEEEE] rounded-full p-1">
+          <div
+            class="flex items-center gap-1 bg-[#EEEEEE] rounded-full p-1 overflow-x-auto max-w-full"
+          >
             <button
               class="px-5 py-2 rounded-full bg-white text-[13px] text-[#1E1E1E] font-medium shadow-[0_6px_16px_rgba(0,0,0,0.08)]"
             >
@@ -373,7 +389,7 @@
           <!-- Left arrow -->
           <button
             aria-label="Previous"
-            class="hidden lg:flex absolute left-[-22px] top-[44%] -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-[0_18px_40px_rgba(0,0,0,0.12)] items-center justify-center"
+            class="hidden lg:flex absolute left-[-65px] top-[44%] -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-[0_18px_40px_rgba(0,0,0,0.12)] items-center justify-center"
           >
             <i
               class="fa-solid fa-arrow-left-long text-[#1E1E1E] text-[14px]"
@@ -383,7 +399,7 @@
           <!-- Right arrow -->
           <button
             aria-label="Next"
-            class="hidden lg:flex absolute right-[-22px] top-[44%] -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-[0_18px_40px_rgba(0,0,0,0.12)] items-center justify-center"
+            class="hidden lg:flex absolute right-[-65px] top-[44%] -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-[0_18px_40px_rgba(0,0,0,0.12)] items-center justify-center"
           >
             <i
               class="fa-solid fa-arrow-right-long text-[#1E1E1E] text-[14px]"
@@ -396,7 +412,7 @@
           >
             <!-- Card 1 -->
             <div
-              class="w-[240px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+              class="w-[300px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
             >
               <!-- Image top -->
               <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
@@ -444,7 +460,7 @@
 
             <!-- Card 2 -->
             <div
-              class="w-[240px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+              class="w-[300px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
             >
               <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
                 <img
@@ -490,7 +506,7 @@
 
             <!-- Card 3 -->
             <div
-              class="w-[240px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+              class="w-[300px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
             >
               <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
                 <img
@@ -536,7 +552,7 @@
 
             <!-- Card 4 -->
             <div
-              class="w-[240px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+              class="w-[300px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
             >
               <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
                 <img
@@ -587,9 +603,11 @@
           <a href="#" class="text-[#E58411] text-[13px] font-medium"
             >View All</a
           >
-          <i
-            class="fa-solid fa-arrow-right-long text-[#E58411] text-[14px]"
-          ></i>
+          <img
+            src="./assets/icons/arrow-forward.png"
+            class="h-8 w-13 object-cover"
+            alt=""
+          />
         </div>
       </div>
     </section>
@@ -760,7 +778,7 @@
           <!-- Left arrow -->
           <button
             aria-label="Previous testimonial"
-            class="hidden md:flex absolute left-[-18px] top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white shadow-[0_15px_35px_rgba(0,0,0,0.12)] items-center justify-center"
+            class="hidden md:flex absolute left-[-20px] top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white shadow-[0_15px_35px_rgba(0,0,0,0.12)] items-center justify-center"
           >
             <!-- Use your uploaded icon -->
             <img src="assets/icons/arrow-left.png" alt="Prev" class="w-4 h-4" />
@@ -769,7 +787,7 @@
           <!-- Right arrow -->
           <button
             aria-label="Next testimonial"
-            class="hidden md:flex absolute right-[-18px] top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white shadow-[0_15px_35px_rgba(0,0,0,0.12)] items-center justify-center"
+            class="hidden md:flex absolute right-[-20px] top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white shadow-[0_15px_35px_rgba(0,0,0,0.12)] items-center justify-center"
           >
             <!-- Use your uploaded icon -->
             <img
@@ -792,7 +810,7 @@
                 <img
                   src="assets/images/user-1.png"
                   alt="Client room"
-                  class="w-full h-[460px] object-cover object-bottom"
+                  class="w-full h-[350px] md:h-[460px] object-cover object-bottom"
                 />
 
                 <!-- Review panel -->
@@ -848,7 +866,7 @@
                 <img
                   src="assets/images/user-2.png"
                   alt="Client room"
-                  class="w-full h-[460px] object-cover object-bottom"
+                  class="w-full h-[350px] md:h-[460px] object-cover object-bottom"
                 />
 
                 <div
@@ -901,7 +919,7 @@
                 <img
                   src="assets/images/user-3.png"
                   alt="Client room"
-                  class="w-full h-[460px] object-cover object-bottom"
+                  class="w-full h-[350px] md:h-[460px] object-cover object-bottom"
                 />
 
                 <div
