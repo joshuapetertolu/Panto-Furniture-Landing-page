@@ -10,6 +10,22 @@
     />
     <title>Panto Furniture</title>
     <style>
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 1s ease forwards;
+}
+
       @font-face {
         font-family: "Gilroy";
         src: url("assets/fonts/Gilroy-Light.woff2") format("woff2");
@@ -49,6 +65,16 @@
         font-style: normal;
         font-display: swap;
       }
+
+      @keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
     </style>
     <script>
       tailwind.config = {
@@ -65,7 +91,7 @@
   <body class="bg-[#ffffff] font-gilroy overflow-x-hidden">
     <!-- Hero & Header Wrapper -->
     <div
-      class="relative min-h-[850px] lg:min-h-[1000px] bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-cover bg-center"
+      class="relative min-h-[130vh] float bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-cover bg-center transition-all duration 500 fade-up"
     >
       <!-- Header Section -->
       <header id="header" class="w-full absolute top-0 left-0 z-50">
@@ -148,7 +174,7 @@
             <img
               src="assets/images/the-search-bar.png"
               alt="Search"
-              class="w-6 h-6"
+              class="w-6 h-6 float" 
             />
           </button>
         </div>
@@ -254,7 +280,10 @@
                 href="#"
                 class="inline-flex items-center gap-5 text-[#E58411] text-[14px] font-medium"
               >
-                <span>More Info→</span>
+                <span>More Info</span>
+                <span class="inline-flex items-center">
+                  <img class="w-12 h-10" src="./assets/icons/arrow-forward.png" alt="">
+                </span>
               </a>
             </div>
 
@@ -272,7 +301,11 @@
                 href="#"
                 class="inline-flex items-center gap-5 text-[#E58411] text-[14px] font-medium"
               >
-                <span>More Info→</span>
+                <span>More Info</span>
+                <span class="inline-flex items-center">
+                  <img class="w-12 h-10" src="./assets/icons/arrow-forward.png" alt="">
+                
+                </span>
               </a>
             </div>
 
@@ -290,7 +323,11 @@
                 href="#"
                 class="inline-flex items-center gap-5 text-[#E58411] text-[14px] font-medium"
               >
-                <span>More Info→</span>
+                <span>More Info</span>
+                <span class="inline-flex items-center">
+                  <img class="w-12 h-10" src="./assets/icons/arrow-forward.png" alt="">
+                
+                </span>
               </a>
             </div>
           </div>
@@ -360,18 +397,18 @@
 
           <!-- Grid -->
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-[120px] place-items-center"
+            class="grid grid-cols-1 space-x-[-5rem] sm:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-[10px] place-items-center"
           >
             <!-- Card 1 -->
             <div
-              class="w-[260px] rounded-[18px] space-x-15 overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+              class="w-[300px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
             >
               <!-- Image top -->
               <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
                 <img
                   src="./assets/images/chair-1.png"
                   alt="Sakarias Armchair"
-                  class="h-[165px] w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
+                  class="h-[165px] w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)] float"
                 />
               </div>
 
@@ -412,13 +449,13 @@
 
             <!-- Card 2 -->
             <div
-              class="w-[260px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+              class="w-[300px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
             >
               <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
                 <img
                   src="./assets/images/chair-2.png"
                   alt="Baltsar Chair"
-                  class="h-[165px] w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
+                  class="h-[165px] float w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
                 />
               </div>
 
@@ -458,13 +495,13 @@
 
             <!-- Card 3 -->
             <div
-              class="w-[260px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+              class="w-[300px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
             >
               <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
                 <img
                   src="./assets/images/chair-3.png"
                   alt="Anjay Chair"
-                  class="h-[165px] w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
+                  class="h-[165px] float w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
                 />
               </div>
 
@@ -504,13 +541,13 @@
 
             <!-- Card 4 -->
             <div
-              class="w-[260px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+              class="w-[300px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
             >
               <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
                 <img
                   src="./assets/images/chair-4.png"
                   alt="Nyantuy Chair"
-                  class="h-[165px] w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
+                  class="h-[165px] float w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
                 />
               </div>
 
@@ -571,12 +608,14 @@
           <!-- Top-Left Gray Background Shape -->
           <div
             class="absolute -top-[45px] left-0 right-[25%] h-[280px] bg-[#F7F7F7] rounded-r-[36px] -z-10"
-          ></div>
+          >
+        </div>
 
           <!-- Bottom-Right Gray Background Shape -->
           <div
             class="absolute top-[20%] -right-[40px] left-[35%] xl:left-[45%] h-[70%] bg-[#F7F7F7] rounded-[36px] -z-10"
-          ></div>
+          >
+        </div>
 
           <!-- Main image -->
           <div
@@ -585,7 +624,7 @@
             <img
               src="assets/images/experience.png"
               alt="Experience"
-              class="w-full h-[360px] md:h-[480px] object-cover"
+              class="w-full float h-[360px] md:h-[480px] object-cover"
             />
           </div>
         </div>
@@ -618,7 +657,8 @@
             href="#"
             class="inline-flex items-center gap-5 text-[#E58411] text-[14px] font-medium tracking-wide"
           >
-            <span>More Info→</span>
+            <span>More Info</span>
+            <img class="w-13 h-10 object-cover" src="./assets/icons/arrow-forward.png" alt="">
           </a>
         </div>
       </div>
@@ -655,7 +695,11 @@
             href="#"
             class="inline-flex items-center gap-5 text-[#E58411] text-[14px] font-medium tracking-wide"
           >
-            <span>More Info→</span>
+            <span>More Info</span>
+            <span class="inline-flex items-center">
+              <img class="w-13 h-10 object-cover" src="./assets/icons/arrow-forward.png" alt="">
+         
+            </span>
           </a>
         </div>
 
@@ -679,12 +723,12 @@
               <img
                 src="assets/images/material-2.png"
                 alt="Material 2"
-                class="w-full h-[220px] -mb-10 sm:h-[280px] lg:h-[350px] object-cover rounded-[16px] lg:rounded-[24px]"
+                class="w-full float h-[220px] -mb-10 sm:h-[280px] lg:h-[350px] object-cover rounded-[16px] lg:rounded-[24px]"
               />
               <img
                 src="assets/images/material-3.png"
                 alt="Material 3"
-                class="w-full h-[250px] -mb-16 sm:h-[320px] lg:h-[390px] object-cover rounded-[16px] lg:rounded-[24px]"
+                class="w-full float h-[250px] -mb-16 sm:h-[320px] lg:h-[390px] object-cover rounded-[16px] lg:rounded-[24px]"
               />
             </div>
 
@@ -695,7 +739,7 @@
               <img
                 src="assets/images/material-1.png"
                 alt="Material 1"
-                class="w-full h-[320px] sm:h-[450px] lg:h-[500px] xl:h-[550px] object-cover object-center"
+                class="w-full float h-[320px] sm:h-[450px] lg:h-[500px] xl:h-[550px] object-cover object-center"
               />
             </div>
           </div>
@@ -1022,7 +1066,9 @@
           class="mt-20 flex flex-col md:flex-row items-center justify-between gap-6"
         >
           <p class="text-[12px] text-[#9A9A9A]">Copyright © 2021</p>
-          <p class="text-[12px] text-[#9A9A9A]">Created by Developer Olumide</p>
+
+          <p class="text-[12px] text-[#9A9A9A]"> Develop by Developer Saheed</p>
+
           <div class="flex items-center gap-10 text-[12px] text-[#1E1E1E]/70">
             <a href="#" class="hover:text-[#1E1E1E]">Terms &amp; Conditions</a>
             <a href="#" class="hover:text-[#1E1E1E]">Privacy Policy</a>
