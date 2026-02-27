@@ -4,25 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <title>Panto Furniture</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @font-face {
+        font-family: "Gilroy";
+        src: url("assets/fonts/Gilroy-Light.woff2") format("woff2");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Gilroy";
+        src: url("assets/fonts/Gilroy-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Gilroy";
+        src: url("assets/fonts/Gilroy-Medium.woff2") format("woff2");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Gilroy";
+        src: url("assets/fonts/Gilroy-Bold.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Gilroy";
+        src: url("assets/fonts/Gilroy-Heavy.woff2") format("woff2");
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ["Gilroy", "sans-serif"],
+              gilroy: ["Gilroy", "sans-serif"],
             },
           },
         },
       };
     </script>
   </head>
-  <body class="bg-[#fffff] font-Gilroy overflow-x-hidden">
+  <body class="bg-[#ffffff] font-gilroy overflow-x-hidden">
     <!-- Hero & Header Wrapper -->
     <div
-      class="relative min-h-[120vh] bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-cover bg-center"
+      class="relative min-h-[130vh] bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-cover bg-center"
     >
       <!-- Header Section -->
       <header id="header" class="w-full absolute top-0 left-0 z-50">
@@ -79,13 +122,13 @@
         class="relative z-10 flex flex-col items-center justify-start min-h-[120vh] pt-20 md:pt-40 lg:pt-52 px-4 text-center"
       >
         <h1
-          class="text-3xl md:text-4xl lg:text-6xl font-bold leading-[1.6] text-white mb-6 max-w-5xl"
+          class="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 max-w-5xl"
         >
           Make Your Interior More <br class="hidden md:block" />
           Minimalistic & Modern
         </h1>
         <p
-          class="text-sm md:text-md lg:text-lg text-white/80 mb-8 md:mb-12 max-w-2xl mx-auto leading-[2.5] font-thin"
+          class="text-sm md:text-md lg:text-lg text-white/80 mb-8 md:mb-12 max-w-2xl mx-auto leading-[2.5] font-light"
         >
           Turn your room with panto into a lot more minimalist
           <br class="hidden md:block" />
@@ -173,16 +216,98 @@
 
         <!-- Section Transition (Soft White Fade) -->
         <div
-          class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white via-white/40 to-transparent"
+          class="absolute -bottom-20 left-0 w-full h-24 bg-gradient-to-t from-white via-white/40 to-transparent"
         ></div>
       </main>
     </div>
-    </div>
 
     <!-- why choosing us -->
-    <section></section>
+    <section class="bg-white py-24">
+      <div class="container mx-auto px-6 lg:px-0">
+        <div
+          class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-14"
+        >
+          <!-- Left Title -->
+          <div class="lg:w-[280px]">
+            <h2 class="text-[40px] leading-[1.1] font-bold text-[#1E1E1E]">
+              Why<br />
+              Choosing Us
+            </h2>
+          </div>
+
+          <!-- Right Columns -->
+          <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-14 lg:gap-20">
+            <!-- Col 1 -->
+            <div class="max-w-[330px]">
+              <h3 class="text-[20px] font-bold text-[#1E1E1E] mb-5">
+                Luxury facilities
+              </h3>
+              <p class="text-[14px] leading-[2.0] text-[#7A7A7A] mb-8">
+                The advantage of hiring a workspace with us is that gives you
+                comfortable service and all-around facilities.
+              </p>
+
+              <a
+                href="#"
+                class="inline-flex items-center gap-5 text-[#E58411] text-[14px] font-medium"
+              >
+                <span>More Info</span>
+                <span class="inline-flex items-center">
+                  <span class="w-9 h-[1.5px] bg-[#E58411]"></span>
+                </span>
+              </a>
+            </div>
+
+            <!-- Col 2 -->
+            <div class="max-w-[330px]">
+              <h3 class="text-[20px] font-bold text-[#1E1E1E] mb-5">
+                Affordable Price
+              </h3>
+              <p class="text-[14px] leading-[2.0] text-[#7A7A7A] mb-8">
+                You can get a workspace of the highest quality at an affordable
+                price and still enjoy the facilities that are oly here.
+              </p>
+
+              <a
+                href="#"
+                class="inline-flex items-center gap-5 text-[#E58411] text-[14px] font-medium"
+              >
+                <span>More Info</span>
+                <span class="inline-flex items-center">
+                  <span class="w-9 h-[1.5px] bg-[#E58411]"></span>
+                  <span class="ml-2 text-[16px] leading-none">→</span>
+                </span>
+              </a>
+            </div>
+
+            <!-- Col 3 -->
+            <div class="max-w-[330px]">
+              <h3 class="text-[20px] font-bold text-[#1E1E1E] mb-5">
+                Many Choices
+              </h3>
+              <p class="text-[14px] leading-[2.0] text-[#7A7A7A] mb-8">
+                We provide many unique work space choices so that you can choose
+                the workspace to your liking.
+              </p>
+
+              <a
+                href="#"
+                class="inline-flex items-center gap-5 text-[#E58411] text-[14px] font-medium"
+              >
+                <span>More Info</span>
+                <span class="inline-flex items-center">
+                  <span class="w-9 h-[1.5px] bg-[#E58411]"></span>
+                  <span class="ml-2 text-[16px] leading-none">→</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Best Selling Products Section -->
+  <!-- Best Selling Products Section -->
     <section class="bg-[#F7F7F7] py-7 my-20 relative">
         <h1 class="text-center text-[#1E1E1E] font-bold text-[2.5rem] mt-4">Best Selling Product</h1>
         <div class="flex justify-center mt-8">
@@ -302,62 +427,92 @@
       </div>
     </section>
 
-    <!-- Experience Section -->
-    <div class="flex flex-col md:flex-row items-center justify-center min-h-screen p-8 md:p-20 gap-16 max-w-7xl mx-auto font-gilory">
-      <div class="relative flex-1 w-full max-w-lg">
+    <section id="experience" class="py-28 bg-white overflow-hidden relative">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <!-- LEFT SIDE -->
+        <div class="relative w-full lg:w-1/2 z-10 lg:pr-10">
+          <!-- Top-Left Gray Background Shape -->
+          <div
+            class="absolute -top-[45px] left-0 right-[25%] h-[280px] bg-[#F7F7F7] rounded-r-[36px] -z-10"
+          ></div>
 
-        <!-- first box -->
-          <div class="absolute -top-10 -left-10 w-4/5 h-[80%] bg-gray-100 rounded-3xl z-0"></div>
-        <!-- second box -->
-          <div class="absolute -bottom-6 -right-8 w-4/5 h-3/5 bg-gray-100 rounded-3xl z-10"></div>
+          <!-- Bottom-Right Gray Background Shape -->
+          <div
+            class="absolute top-[20%] -right-[40px] left-[35%] xl:left-[45%] h-[70%] bg-[#F7F7F7] rounded-[36px] -z-10"
+          ></div>
 
-        
-        <img src="assets/images/experience-1.png" alt="Experience Image" 
-        class="relative z-10 w-full rounded-3xl  shadow-2xl">
-
+          <!-- Main image -->
+          <div
+            class="relative rounded-r-[36px] overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.12)]"
+          >
+            <img
+              src="assets/images/experience.png"
+              alt="Experience"
+              class="w-full h-[360px] md:h-[480px] object-cover"
+            />
+          </div>
         </div>
-        <div class="flex-1 space-y-6">
-        <span class="text-[#E58411] font-Gilroy-semibold font-bold tracking-[0.2em] text-sm block">
-            EXPERIENCES
-         </span>
 
-         <h1 class="text-3xl md:text-4xl font-Gilroy-Bold text-[#1E1E1E] font-bold leading-tight">
-            We Provide You The Best Experience
-        </h1>
-        <p class="text-[#1E1E1E] text-base leading-relaxed font-Gilroy-Regular text-1xl md:text-1xl">
-           You don’t have to worry about the result because all of these
-           interiors are made by people 
-           who are professionals in their fields with an elegant and 
-           lucurious style and with premium quality materials
-        </p>
-        
-        <a href="#" class="text-[#E58411] font-Gilroy-Medium text-sm hover:underline">
-          More Info → 
-        </a>
-       </div>
-       
-     </div>
-     
-    
-    </div>
+        <!-- RIGHT SIDE -->
+        <div
+          class="w-full lg:w-1/2 px-6 lg:px-0 lg:pr-12 xl:pr-24 lg:max-w-xl mx-auto lg:mx-0"
+        >
+          <p
+            class="text-[#E58411] text-[12px] tracking-[0.35em] font-bold mb-5 uppercase"
+          >
+            Experiences
+          </p>
+
+          <h2
+            class="text-[32px] md:text-[40px] font-bold leading-[1.2] text-[#1E1E1E] mb-6"
+          >
+            We Provide You The<br />
+            Best Experience
+          </h2>
+
+          <p class="text-[15px] leading-[2.1] text-[#7A7A7A] mb-8">
+            You don’t have to worry about the result because all of these
+            interiors are made by people who are professionals in their fields
+            with an elegant and luxurious style and with premium quality
+            materials
+          </p>
+
+          <a
+            href="#"
+            class="inline-flex items-center gap-5 text-[#E58411] text-[14px] font-medium tracking-wide"
+          >
+            <span>More Info</span>
+            <span class="inline-flex items-center">
+              <span class="w-10 h-[2px] bg-[#E58411]"></span>
+              <span class="-ml-1 text-[20px] leading-none mb-[2px]">→</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- Our Materials Section -->
-    <section class="bg-gray-100 max-w-7xl ml-10 py-20">
-      <div class="grid lg:grid-cols-2 gap-16 items-center">
-        <!-- Left Content -->
-        <div>
+    <section class="py-28 bg-white overflow-hidden relative">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <!-- LEFT SIDE: Text -->
+        <div
+          class="w-full lg:w-1/2 px-6 lg:px-0 lg:pl-[120px] xl:pl-[180px] lg:max-w-2xl mx-auto lg:mx-0 lg:order-1"
+        >
           <p
-            class="text-sm tracking-[0.3em] text-orange-400 line-height:-[100%] leading-loose font-semibold mb-6"
+            class="text-[#E58411] text-[12px] tracking-[0.35em] font-bold mb-5 uppercase"
           >
-            MATERIALS
+            Materials
           </p>
-          <div class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            <h1 class="mb-2">Very Serious</h1>
-            <h1 class="mb-2">Materials For Making</h1>
-            <h1 class="mb-2">Furniture</h1>
-          </div>
 
-          <p class="text-gray-500 max-w-md mb-8 leading-relaxed">
+          <h2
+            class="text-[32px] md:text-[40px] font-bold leading-[1.2] text-[#1E1E1E] mb-6"
+          >
+            Very Serious<br />
+            Materials For Making<br />
+            Furniture
+          </h2>
+
+          <p class="text-[15px] leading-[2.1] text-[#7A7A7A] mb-8">
             Because panto was very serious about designing furniture for our
             environment, using a very expensive and famous capital but at a
             relatively low price
@@ -365,216 +520,386 @@
 
           <a
             href="#"
-            class="inline-flex items-center text-orange-500 font-medium hover:gap-3 gap-2 transition-all"
+            class="inline-flex items-center gap-5 text-[#E58411] text-[14px] font-medium tracking-wide"
           >
-            More Info
-            <span class="text-xl">→</span>
+            <span>More Info</span>
+            <span class="inline-flex items-center">
+              <span class="w-10 h-[2px] bg-[#E58411]"></span>
+              <span class="-ml-1 text-[20px] leading-none mb-[2px]">→</span>
+            </span>
           </a>
         </div>
 
-        <!-- Right Images -->
-        <div class="grid grid-cols-2 items-center">
-          <!-- Small Images Column -->
-          <div class="grid grid-cols-1 px-8">
-            <img
-              src="./assets/images/material-2.png"
-              class="rounded-2xl h-[13rem] w-[15rem]"
-              alt="unsplash"
-            />
+        <!-- RIGHT SIDE: Images Grid -->
+        <div
+          class="relative w-full lg:w-1/2 z-10 lg:order-2 flex justify-end pl-4 lg:pl-0 mt-8 lg:mt-0"
+        >
+          <!-- Top-Right Gray Background Shape -->
+          <!-- Sticks up above the right image, but lower than the top of the top-left image -->
+          <div
+            class="absolute top-12 lg:top-[120px] bottom-6 lg:bottom-[40px] right-0 left-[25%] xl:left-[15%] bg-[#F7F7F7] rounded-tl-[36px] lg:rounded-tl-[48px] -z-10"
+          ></div>
 
-            <img
-              src="./assets/images/material-3.png"
-              class="rounded-2xl h-[20rem] w-[15rem]"
-              alt="mirror"
-            />
-          </div>
+          <div
+            class="flex items-end gap-3 sm:gap-4 lg:gap-8 w-full lg:w-[120%] xl:w-[130%] mr-[-20px] lg:mr-0 z-10 pt-4 lg:pt-0 xl:pt-4"
+          >
+            <!-- Left column: NO SHADOWS -->
+            <div
+              class="flex flex-col gap-3 lg:gap-4 w-[42%] lg:w-[40%] pb-0 lg:pb-0 mb-0 lg:mb-0"
+            >
+              <img
+                src="assets/images/material-2.png"
+                alt="Material 2"
+                class="w-full h-[220px] -mb-10 sm:h-[280px] lg:h-[350px] object-cover rounded-[16px] lg:rounded-[24px]"
+              />
+              <img
+                src="assets/images/material-3.png"
+                alt="Material 3"
+                class="w-full h-[250px] -mb-16 sm:h-[320px] lg:h-[390px] object-cover rounded-[16px] lg:rounded-[24px]"
+              />
+            </div>
 
-          <!-- Large Image -->
-          <div>
-            <img
-              src="./assets/images/material-1.png"
-              class="border-6 border-r-0 rounded-tl-lg rounded-bl-lg shadow-3xl shadow-orange-500 object-cover h-[24rem] max-w-full right-18"
-              alt="dinning"
-            />
+            <!-- Right large column: HAS SHADOW -->
+            <div
+              class="w-[58%] lg:w-[60%] shadow-[0_20px_50px_rgba(0,0,0,0.12)] rounded-l-[16px] lg:rounded-l-[36px] overflow-hidden"
+            >
+              <img
+                src="assets/images/material-1.png"
+                alt="Material 1"
+                class="w-full h-[320px] sm:h-[450px] lg:h-[500px] xl:h-[550px] object-cover object-center"
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Our Testimonials Section -->
-    
-    <section class="py-20 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-6">
-      
-      <!-- Title -->
-      <div class="text-center mb-7">
-      <h2 class="text-[12px] font-bold text-[#E58411]">
-      TESTIMONIAL
-      </h2>
-      <p class="text-[#1E1E1E] text-[32px] mt-1">
-       Our Client Reviews
-      </p>
-      </div>
-      
-      <!-- Grid -->
-      <div class="grid md:grid-cols-3 gap-8">
-      
-      <!-- ===== Card 1 (Left Arrow) ===== -->
-      <div class="relative h-[30rem] rounded-2xl overflow-hidden bg-cover bg-center shadow-xl"
-      style="background-image:url('assets/images/user-2.png')">
-      
-      
-      
-      <!-- Left Arrow -->
-      <div class="absolute left-[-8px] top-1/3 -translate-y-1/2 z-20">
-      <div class="w-8 h-8 bg-[#FFFFFF] rounded-full flex items-center justify-center text-gray-600 cursor-pointer">
-     <img class="w-5" src="assets/icons/arrow-nav-left.png">
-      </div>
-      </div>
-      
-      <!-- Content Box -->
-      <div class="absolute bottom-0  w-10/12  left-0 mb-5 ml-7 h-41 bg-white/95  p-5 text-center rounded-2xl">
-      
-      <img src="assets/images/bg-dot-1.png"
-      class="w-20 h-20 rounded-full mx-auto  border-[10px] border-white -mt-14 object-top object-cover shadow-sm">
-      
-      <h3 class="mt-2 font-semibold text-md">Bang Upin</h3>
-      <p class="text-2 text-gray-400">Pedagang Asongan</p>
-      <p class="text-gray-500 text-sm mt-2">
-        “Terimakasih banyak, kini ruanganku<br> 
-        menjadi lebih mewah dan terlihat<br>
-         mahal“
-      </p>
-      <div class="text-[#F6973F] text-md mt-1">★★★★<span class="opacity-50">★</span></div>
-      
-     
-      
-      </div>
-      </div>
-      
-      <!-- ===== Card 2 ===== -->
-      <div class="relative h-[30rem] rounded-2xl overflow-hidden  bg-cover bg-center  shadow-xl"
-      style="background-image:url('assets/images/user-1.png')">
-      
-    
-      
-      <div class="absolute bottom-0 left-0 w-10/12 mb-5 ml-7 h-41 bg-white/95 p-5 text-center rounded-xl">
-   
-      
-      <img src="assets/images/bg-dot-2.png"
-      class="w-20 h-20 rounded-full mx-auto  border-[10px] border-white -mt-14 object-cover">
-      
-      <h3 class="mt-2 font-semibold text-md">Ibuk Sukijan</h3>
-      <p class="text-2 text-gray-400">Ibu Rumah Tangga</p>
-      <p class="text-gray-500 text-sm mt-2">
-        “Makasih Panto, aku sekarang berasa<br>
-        tinggal di apartment karena barang-<br>barang
-       yang terlihat mewah“
-      </p>
-  
-      <div class="text-[#F6973F] text-md mt-1">★★★★<span class="opacity-50">★</span></div>
-      
-    
-      
-      </div>
-      </div>
-      
-  
-  
-  
-      <!-- ===== Card 3 (Right Arrow) ===== -->
-      <div class="relative h-[30rem] rounded-2xl overflow-hidden bg-cover bg-center shadow-xl"
-      style="background-image:url('assets/images/user-3.png')">
-      
-     
-      
-      <!-- Right Arrow -->
-      <div class="absolute right-[-8px] top-1/3 -translate-y-1/2 z-20">
-      <div class="w-8 h-8 bg-[#FFFFFF] rounded-full flex items-center justify-center text-gray-600 cursor-pointer">
-      <img class="w-5" src="assets/icons/arrow-nav-right.png">
-      </div>
-      </div>
-      
-  
-          
-        <div class="absolute bottom-0 left-0 w-10/12 mb-5 ml-7 h-42 bg-white/95 p-5 text-center rounded-xl">
-      <img  src="assets/images/bg-dot-3.png"
-      class="w-20 h-20 rounded-full mx-auto border-[10px] border-white  -mt-12   object-cover">
-      
-      <h3 class="mt-2 font-semibold text-md">Mpok Ina</h3>
-      <p class="text-2 text-gray-400">Karyawan Swasta</p>
-      <p class="text-gray-500 text-sm mt-2">
-        “Sangat terjangkau untuk kantong<br>
-         saya yang tidak terlalu banyak“
-      </p>
-  
-      <div class="text-[#F6973F] text-md mt-5">★★★★<span class="opacity-50">★</span></div>
-      
-    
-      
-      </div>
+    <section id="testimonials" class="py-24 bg-[#ffffff]">
+      <div class="container mx-auto px-6 lg:px-0">
+        <!-- Heading -->
+        <div class="text-center mb-14">
+          <p
+            class="text-[#E58411] text-[12px] tracking-[0.35em] font-semibold mb-3"
+          >
+            TESTIMONIALS
+          </p>
+          <h2 class="text-[26px] md:text-[32px] font-black text-[#1E1E1E]">
+            Our Client Reviews
+          </h2>
+        </div>
+
+        <!-- Slider wrapper -->
+        <div class="relative">
+          <!-- Left arrow -->
+          <button
+            aria-label="Previous testimonial"
+            class="hidden md:flex absolute left-[-18px] top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white shadow-[0_15px_35px_rgba(0,0,0,0.12)] items-center justify-center"
+          >
+            <!-- Use your uploaded icon -->
+            <img src="assets/icons/arrow-left.png" alt="Prev" class="w-4 h-4" />
+          </button>
+
+          <!-- Right arrow -->
+          <button
+            aria-label="Next testimonial"
+            class="hidden md:flex absolute right-[-18px] top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white shadow-[0_15px_35px_rgba(0,0,0,0.12)] items-center justify-center"
+          >
+            <!-- Use your uploaded icon -->
+            <img
+              src="assets/icons/arrow-right.png"
+              alt="Next"
+              class="w-4 h-4"
+            />
+          </button>
+
+          <!-- Cards row -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 items-start"
+          >
+            <!-- Card 1 -->
+            <div class="relative bg-white">
+              <div
+                class="relative rounded-[22px] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.12)]"
+              >
+                <!-- Background image MUST anchor to bottom -->
+                <img
+                  src="assets/images/user-1.png"
+                  alt="Client room"
+                  class="w-full h-[460px] object-cover object-bottom"
+                />
+
+                <!-- Review panel -->
+                <div
+                  class="absolute left-1/2 -translate-x-1/2 bottom-4 w-[84%] bg-white rounded-[18px] px-6 pt-10 pb-6 shadow-[0_25px_50px_rgba(0,0,0,0.12)]"
+                >
+                  <!-- Avatar (overlapping) -->
+                  <div class="absolute left-1/2 -translate-x-1/2 -top-7">
+                    <div
+                      class="w-14 h-14 rounded-full bg-white shadow-[0_10px_25px_rgba(0,0,0,0.18)] flex items-center justify-center"
+                    >
+                      <img
+                        src="assets/images/bg-dot-1.png"
+                        alt="Bang Upin"
+                        class="w-12 h-12 rounded-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <h4
+                    class="text-[14px] font-semibold text-[#1E1E1E] text-center"
+                  >
+                    Bang Upin
+                  </h4>
+                  <p class="text-[11px] text-[#9A9A9A] text-center mt-1">
+                    Pedagang Asongan
+                  </p>
+
+                  <p
+                    class="text-[12px] leading-[1.9] text-[#6F6F6F] text-center mt-4 px-2"
+                  >
+                    “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan
+                    terlihat mahal”
+                  </p>
+
+                  <!-- Stars -->
+                  <div class="flex items-center justify-center gap-1 mt-5">
+                    <span class="text-[#F6B76A] text-[12px]">★</span>
+                    <span class="text-[#F6B76A] text-[12px]">★</span>
+                    <span class="text-[#F6B76A] text-[12px]">★</span>
+                    <span class="text-[#F6B76A] text-[12px]">★</span>
+                    <span class="text-[#F6B76A]/40 text-[12px]">★</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative bg-white">
+              <div
+                class="relative rounded-[22px] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.12)]"
+              >
+                <img
+                  src="assets/images/user-2.png"
+                  alt="Client room"
+                  class="w-full h-[460px] object-cover object-bottom"
+                />
+
+                <div
+                  class="absolute left-1/2 -translate-x-1/2 bottom-4 w-[84%] bg-white rounded-[18px] px-6 pt-10 pb-6 shadow-[0_25px_50px_rgba(0,0,0,0.12)]"
+                >
+                  <div class="absolute left-1/2 -translate-x-1/2 -top-7">
+                    <div
+                      class="w-14 h-14 rounded-full bg-white shadow-[0_10px_25px_rgba(0,0,0,0.18)] flex items-center justify-center"
+                    >
+                      <img
+                        src="assets/images/bg-dot-2.png"
+                        alt="Ibuk Sukijan"
+                        class="w-12 h-12 rounded-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <h4
+                    class="text-[14px] font-semibold text-[#1E1E1E] text-center"
+                  >
+                    Ibuk Sukijan
+                  </h4>
+                  <p class="text-[11px] text-[#9A9A9A] text-center mt-1">
+                    Ibu Rumah Tangga
+                  </p>
+
+                  <p
+                    class="text-[12px] leading-[1.9] text-[#6F6F6F] text-center mt-4 px-2"
+                  >
+                    “Makasih Panto, aku sekarang berasa tinggal di apartment
+                    karena barang-barang yang terlihat mewah”
+                  </p>
+
+                  <div class="flex items-center justify-center gap-1 mt-5">
+                    <span class="text-[#F6B76A] text-[12px]">★</span>
+                    <span class="text-[#F6B76A] text-[12px]">★</span>
+                    <span class="text-[#F6B76A] text-[12px]">★</span>
+                    <span class="text-[#F6B76A] text-[12px]">★</span>
+                    <span class="text-[#F6B76A]/40 text-[12px]">★</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative bg-white">
+              <div
+                class="relative rounded-[22px] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.12)]"
+              >
+                <img
+                  src="assets/images/user-3.png"
+                  alt="Client room"
+                  class="w-full h-[460px] object-cover object-bottom"
+                />
+
+                <div
+                  class="absolute left-1/2 -translate-x-1/2 bottom-4 w-[84%] bg-white rounded-[18px] px-6 pt-10 pb-6 shadow-[0_25px_50px_rgba(0,0,0,0.12)]"
+                >
+                  <div class="absolute left-1/2 -translate-x-1/2 -top-7">
+                    <div
+                      class="w-14 h-14 rounded-full bg-white shadow-[0_10px_25px_rgba(0,0,0,0.18)] flex items-center justify-center"
+                    >
+                      <img
+                        src="assets/images/bg-dot-3.png"
+                        alt="Mpok Ina"
+                        class="w-12 h-12 rounded-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <h4
+                    class="text-[14px] font-semibold text-[#1E1E1E] text-center"
+                  >
+                    Mpok Ina
+                  </h4>
+                  <p class="text-[11px] text-[#9A9A9A] text-center mt-1">
+                    Karyawan Swasta
+                  </p>
+
+                  <p
+                    class="text-[12px] leading-[1.9] text-[#6F6F6F] text-center mt-4 px-2"
+                  >
+                    “Sangat terjangkau untuk kantong saya yang tidak terlalu
+                    banyak”
+                  </p>
+
+                  <div class="flex items-center justify-center gap-1 mt-5">
+                    <span class="text-[#F6B76A] text-[12px]">★</span>
+                    <span class="text-[#F6B76A] text-[12px]">★</span>
+                    <span class="text-[#F6B76A] text-[12px]">★</span>
+                    <span class="text-[#F6B76A] text-[12px]">★</span>
+                    <span class="text-[#F6B76A]/40 text-[12px]">★</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom spacing like screenshot -->
+          <div class="h-8"></div>
+        </div>
       </div>
     </section>
 
-
     <!-- The Footer -->
     <footer class="bg-[#f7f7f7]">
-      <div class="max-w-7x1 mx-auto px-6 py-20">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-11">
-          <div>
-            <h2 class="text-2x1 font-semibold text-gray-500 mb-4">Panto</h2>
-            <p class="text-gray-500 text-sm max">
+      <div class="container mx-auto px-6 lg:px-0 pt-20 pb-10">
+        <!-- Top grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-14 md:gap-10">
+          <!-- Brand / About -->
+          <div class="md:col-span-1">
+            <h3 class="text-[22px] font-black text-[#1E1E1E] mb-5">Panto</h3>
+            <p class="text-[13px] leading-[2.0] text-[#7A7A7A] max-w-[260px]">
               The advantage of hiring a workspace with us is that gives you
-              comfortable service and all-around facilities
+              comfortable service and all-around facilities.
             </p>
           </div>
 
+          <!-- Services -->
           <div>
-            <h3 class="text-sm font-medium text-orange-300 mb-4">Services</h3>
-            <ul class="text-sm text-gray-500 space-y-2">
-              <li>Email Marketing</li>
-              <li>Campaigns</li>
-              <li>Branding</li>
+            <h4 class="text-[13px] font-semibold text-[#E58411] mb-5">
+              Services
+            </h4>
+            <ul class="space-y-4 text-[13px] text-[#1E1E1E]/80">
+              <li>
+                <a href="#" class="hover:text-[#1E1E1E]">Email Marketing</a>
+              </li>
+              <li><a href="#" class="hover:text-[#1E1E1E]">Campaigns</a></li>
+              <li><a href="#" class="hover:text-[#1E1E1E]">Branding</a></li>
             </ul>
           </div>
 
+          <!-- Furniture -->
           <div>
-            <h3 class="text-sm font-medium text-orange-300 mb-4">Furniture</h3>
-            <ul class="text-sm text-gray-500 space-y-2">
-              <li>Beds</li>
-              <li>Chair</li>
-              <li>All</li>
+            <h4 class="text-[13px] font-semibold text-[#E58411] mb-5">
+              Furniture
+            </h4>
+            <ul class="space-y-4 text-[13px] text-[#1E1E1E]/80">
+              <li><a href="#" class="hover:text-[#1E1E1E]">Beds</a></li>
+              <li><a href="#" class="hover:text-[#1E1E1E]">Chair</a></li>
+              <li><a href="#" class="hover:text-[#1E1E1E]">All</a></li>
             </ul>
           </div>
 
-          <div class="space-y-3">
-            <h3 class="text-sm font-medium text-orange-300 mb-4">Follow Us</h3>
-            <ul class="flex item-center gap-4 text-sm text-gray-500">
-              <img src="./assets/icons/facebook.png" class="h-3" alt="" />
-              <li>Facebook</li>
-            </ul>
-            <ul class="flex item-center gap-4 text-sm text-gray-500">
-              <img src="./assets/icons/twitter.png" class="h-3" alt="" />
-              <li>Twitter</li>
-            </ul>
-            <ul class="flex item-center gap-4 text-sm text-gray-500">
-              <img src="./assets/icons/instagram.png" class="h-3" alt="" />
-              <li>Instagram</li>
+          <!-- Follow Us -->
+          <div>
+            <h4 class="text-[13px] font-semibold text-[#E58411] mb-5">
+              Follow Us
+            </h4>
+            <ul class="space-y-4 text-[13px] text-[#1E1E1E]/80">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 hover:text-[#1E1E1E]"
+                >
+                  <!-- icon -->
+                  <span class="w-4 h-4 flex items-center justify-center">
+                    <!-- Facebook (swap to your icon if needed) -->
+                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-[#1E1E1E]">
+                      <path
+                        d="M13.5 22v-8h2.7l.4-3H13.5V9.1c0-.9.3-1.5 1.6-1.5H16.8V5.1c-.3 0-1.4-.1-2.7-.1-2.7 0-4.6 1.7-4.6 4.8V11H6.9v3h2.6v8h4z"
+                      />
+                    </svg>
+                  </span>
+                  <span>Facebook</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 hover:text-[#1E1E1E]"
+                >
+                  <span class="w-4 h-4 flex items-center justify-center">
+                    <!-- Twitter -->
+                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-[#1E1E1E]">
+                      <path
+                        d="M22 5.8c-.7.3-1.4.5-2.2.6.8-.5 1.3-1.2 1.6-2.1-.7.4-1.6.8-2.4.9C18.3 4.4 17.3 4 16.2 4c-2.1 0-3.7 1.8-3.2 3.8-3-.2-5.7-1.6-7.5-3.9-.9 1.6-.5 3.6 1 4.7-.6 0-1.2-.2-1.7-.5 0 1.7 1.2 3.2 2.9 3.5-.5.1-1.1.2-1.7.1.5 1.5 2 2.6 3.7 2.6-1.6 1.2-3.6 1.8-5.7 1.6 1.8 1.2 4 1.9 6.3 1.9 7.7 0 12-6.6 11.7-12.5.8-.6 1.3-1.2 1.8-2z"
+                      />
+                    </svg>
+                  </span>
+                  <span>Twitter</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-3 hover:text-[#1E1E1E]"
+                >
+                  <span class="w-4 h-4 flex items-center justify-center">
+                    <!-- Instagram -->
+                    <svg viewBox="0 0 24 24" class="w-4 h-4 fill-[#1E1E1E]">
+                      <path
+                        d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.2-2.6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                      />
+                    </svg>
+                  </span>
+                  <span>Instagram</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
+        <!-- Bottom row -->
         <div
-          class="mt-20 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400"
+          class="mt-20 flex flex-col md:flex-row items-center justify-between gap-6"
         >
-          <p>Copyright © 2021</p>
-          <div class="flex gap-5 md:mt-0">
-            <a href="#" class="hover:text-gray-600">Terms & Conditions</a>
-            <a href="#" class="hover:text-gray-600 mr-20">Privacy Policy</a>
+          <p class="text-[12px] text-[#9A9A9A]">Copyright © 2021</p>
+
+          <div class="flex items-center gap-10 text-[12px] text-[#1E1E1E]/70">
+            <a href="#" class="hover:text-[#1E1E1E]">Terms &amp; Conditions</a>
+            <a href="#" class="hover:text-[#1E1E1E]">Privacy Policy</a>
           </div>
         </div>
       </div>
     </footer>
   </body>
 </html>
-x
