@@ -65,7 +65,7 @@
   <body class="bg-[#ffffff] font-gilroy overflow-x-hidden">
     <!-- Hero & Header Wrapper -->
     <div
-      class="relative min-h-[850px] lg:min-h-[1000px] bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-cover bg-center"
+      class="relative min-h-[130vh] bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-cover bg-center"
     >
       <!-- Header Section -->
       <header id="header" class="w-full absolute top-0 left-0 z-50">
@@ -119,7 +119,7 @@
 
       <!-- Hero Content -->
       <main
-        class="relative z-10 flex flex-col items-center justify-start pb-32 lg:pb-0 lg:min-h-[850px] pt-20 md:pt-40 lg:pt-52 px-4 text-center"
+        class="relative z-10 flex flex-col items-center justify-start min-h-[120vh] pt-20 md:pt-40 lg:pt-52 px-4 text-center"
       >
         <h1
           class="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 max-w-5xl"
@@ -157,7 +157,7 @@
 
         <!-- Tooltip Widget -->
         <div
-          class="hidden md:flex absolute top-[52%] left-[18%] z-20 bg-white/10 backdrop-blur-md p-2 rounded-full gap-3 border border-white/20 shadow-2xl scale-125"
+          class="absolute top-[52%] left-[18%] z-20 bg-white/10 backdrop-blur-md p-2 rounded-full flex gap-3 border border-white/20 shadow-2xl scale-125"
         >
           <div
             class="w-6 h-6 rounded-full bg-[#E58411] flex items-center justify-center cursor-pointer shadow-inner"
@@ -174,9 +174,7 @@
 
         <!-- Interaction Dots -->
         <!-- Dot on Sofa Back -->
-        <div
-          class="hidden md:block absolute top-[63%] left-[21%] z-20 cursor-pointer group"
-        >
+        <div class="absolute top-[63%] left-[21%] z-20 cursor-pointer group">
           <div class="w-10 h-10 flex items-center justify-center relative">
             <div
               class="absolute inset-0 bg-white/10 rounded-full animate-ping opacity-50"
@@ -190,9 +188,7 @@
         </div>
 
         <!-- Dot on Sofa Seat -->
-        <div
-          class="hidden md:block absolute top-[67%] left-[34%] z-20 cursor-pointer group"
-        >
+        <div class="absolute top-[67%] left-[34%] z-20 cursor-pointer group">
           <img
             src="assets/images/the-spreaded-dots.png"
             alt="Info Dot"
@@ -201,9 +197,7 @@
         </div>
 
         <!-- Dot on Lamp/Far Left -->
-        <div
-          class="hidden md:block absolute top-[75%] left-[8%] z-20 cursor-pointer group"
-        >
+        <div class="absolute top-[75%] left-[8%] z-20 cursor-pointer group">
           <img
             src="assets/images/the-left-sided-dots.png"
             alt="Info Dot"
@@ -212,9 +206,7 @@
         </div>
 
         <!-- Dot on Far Right -->
-        <div
-          class="hidden md:block absolute top-[76%] right-[5%] z-20 cursor-pointer group"
-        >
+        <div class="absolute top-[76%] right-[5%] z-20 cursor-pointer group">
           <img
             src="assets/images/the-spreaded-dots.png"
             alt="Info Dot"
@@ -326,9 +318,7 @@
 
         <!-- Tabs -->
         <div class="mt-6 flex justify-center">
-          <div
-            class="flex items-center gap-1 bg-[#EEEEEE] rounded-full p-1 overflow-x-auto max-w-full"
-          >
+          <div class="flex items-center gap-1 bg-[#EEEEEE] rounded-full p-1">
             <button
               class="px-5 py-2 rounded-full bg-white text-[13px] text-[#1E1E1E] font-medium shadow-[0_6px_16px_rgba(0,0,0,0.08)]"
             >
@@ -380,7 +370,7 @@
           >
             <!-- Card 1 -->
             <div
-              class="w-[260px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+              class="w-[240px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
             >
               <!-- Image top -->
               <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
@@ -428,7 +418,7 @@
 
             <!-- Card 2 -->
             <div
-              class="w-[260px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+              class="w-[240px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
             >
               <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
                 <img
@@ -474,7 +464,7 @@
 
             <!-- Card 3 -->
             <div
-              class="w-[260px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+              class="w-[240px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
             >
               <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
                 <img
@@ -520,7 +510,7 @@
 
             <!-- Card 4 -->
             <div
-              class="w-[260px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+              class="w-[240px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
             >
               <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
                 <img
@@ -777,7 +767,7 @@
                 <img
                   src="assets/images/user-1.png"
                   alt="Client room"
-                  class="w-full h-[350px] md:h-[460px] object-cover object-bottom"
+                  class="w-full h-[460px] object-cover object-bottom"
                 />
 
                 <!-- Review panel -->
@@ -833,7 +823,7 @@
                 <img
                   src="assets/images/user-2.png"
                   alt="Client room"
-                  class="w-full h-[350px] md:h-[460px] object-cover object-bottom"
+                  class="w-full h-[460px] object-cover object-bottom"
                 />
 
                 <div
@@ -886,7 +876,7 @@
                 <img
                   src="assets/images/user-3.png"
                   alt="Client room"
-                  class="w-full h-[350px] md:h-[460px] object-cover object-bottom"
+                  class="w-full h-[460px] object-cover object-bottom"
                 />
 
                 <div
@@ -1044,6 +1034,7 @@
           class="mt-20 flex flex-col md:flex-row items-center justify-between gap-6"
         >
           <p class="text-[12px] text-[#9A9A9A]">Copyright © 2021</p>
+
           <div class="flex items-center gap-10 text-[12px] text-[#1E1E1E]/70">
             <a href="#" class="hover:text-[#1E1E1E]">Terms &amp; Conditions</a>
             <a href="#" class="hover:text-[#1E1E1E]">Privacy Policy</a>
