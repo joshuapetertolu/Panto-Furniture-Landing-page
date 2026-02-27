@@ -307,159 +307,66 @@
     </section>
 
     <!-- Best Selling Products Section -->
-    <section class="bg-[#F7F7F7] py-20">
-      <div class="container mx-auto px-6 lg:px-0">
-        <!-- Title -->
-        <h2
-          class="text-center text-[#1E1E1E] font-bold text-[22px] md:text-[26px]"
-        >
-          Best Selling Product
-        </h2>
-
-        <!-- Tabs -->
-        <div class="mt-6 flex justify-center">
-          <div class="flex items-center gap-1 bg-[#EEEEEE] rounded-full p-1">
-            <button
-              class="px-5 py-2 rounded-full bg-white text-[13px] text-[#1E1E1E] font-medium shadow-[0_6px_16px_rgba(0,0,0,0.08)]"
-            >
-              Chair
-            </button>
-            <button
-              class="px-5 py-2 rounded-full text-[13px] text-[#6F6F6F] font-medium hover:text-[#1E1E1E]"
-            >
-              Beds
-            </button>
-            <button
-              class="px-5 py-2 rounded-full text-[13px] text-[#6F6F6F] font-medium hover:text-[#1E1E1E]"
-            >
-              Sofa
-            </button>
-            <button
-              class="px-5 py-2 rounded-full text-[13px] text-[#6F6F6F] font-medium hover:text-[#1E1E1E]"
-            >
-              Lamp
-            </button>
-          </div>
+    <section class="bg-[#F7F7F7] py-7">
+        <h1 class="text-center text-[#1E1E1E] font-bold text-[2.5rem] mt-4">Best Selling Product</h1>
+        <div class="flex justify-center mt-8">
+          <div class="flex flex-rol space-x-1 border-1 rounded-full bg-[#EEEEEE] py-2 px-2 justify-center items-center">
+          <h2 class="bg-[#FFFFFF] px-5 py-3  rounded-3xl border-1 hover:text-[#E58411]">Chairs</h2>
+          <h2 class="px-5 py-3 rounded-3xl border-1 hover:text-[#E58411]">Beds</h2>
+          <h2 class="px-5 py-3 rounded-3xl border-1 hover:text-[#E58411]">Sofa</h2>
+          <h2 class="px-5 py-3 rounded-3xl border-1 hover:text-[#E58411]">Lamps</h2>
+      </div>
         </div>
 
-        <!-- Cards area -->
-        <div class="relative mt-14">
-          <!-- Left arrow -->
-          <button
-            aria-label="Previous"
-            class="hidden lg:flex absolute left-[-22px] top-[44%] -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-[0_18px_40px_rgba(0,0,0,0.12)] items-center justify-center"
-          >
-            <i
-              class="fa-solid fa-arrow-left-long text-[#1E1E1E] text-[14px]"
-            ></i>
-          </button>
-
-          <!-- Right arrow -->
-          <button
-            aria-label="Next"
-            class="hidden lg:flex absolute right-[-22px] top-[44%] -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-[0_18px_40px_rgba(0,0,0,0.12)] items-center justify-center"
-          >
-            <i
-              class="fa-solid fa-arrow-right-long text-[#1E1E1E] text-[14px]"
-            ></i>
-          </button>
-
-          <!-- Grid -->
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 place-items-center"
-          >
-            <!-- Card 1 -->
-            <div
-              class="w-[240px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
-            >
-              <!-- Image top -->
-              <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
-                <img
-                  src="./assets/images/chair-1.png"
-                  alt="Sakarias Armchair"
-                  class="h-[165px] w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
-                />
+        <div class="absolute left-0 mt-[12rem] ml-[17rem] hidden lg:block"><i class="fa-solid fa-arrow-left-long border-1 bg-white w-12 h-12 p-4 rounded-full"></i></div>
+         <div class="absolute right-0 mt-[12rem] mr-[17rem] hidden lg:block"><i class="fa-solid fa-arrow-right-long border-1 bg-white w-12 h-12 p-4 rounded-full"></i></div>
+         
+         
+        <div class="grid mt-20 md:grid-cols-2 md:place-items-center md:mx-[8rem] lg:grid-cols-4 ">
+            <div>
+              <div class="bg-gray-100 border-1 p-4 rounded-t-xl shadow-md">
+                <img src="./assets/images/chair-1.png" class="h-[15rem] w-[15rem] object-contain">
+               
               </div>
-
-              <!-- Content bottom -->
-              <div class="px-5 pt-4 pb-5">
-                <p class="text-[12px] text-[#8D8D8D] mb-1">Chair</p>
-                <h3
-                  class="text-[14px] font-semibold text-[#0D1B39] leading-snug"
-                >
-                  Sakarias Armchair
-                </h3>
-
-                <div
-                  class="mt-2 flex items-center gap-1 text-[#F6B76A] text-[12px]"
-                >
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star text-[#F6B76A]/40"></i>
-                </div>
-
-                <div class="mt-6 flex items-center justify-between">
-                  <div class="text-[#0D1B39] font-semibold">
-                    <span class="text-[12px] align-top">$</span>
-                    <span class="text-[16px] ml-1">392</span>
-                  </div>
-
-                  <button
-                    aria-label="Add to cart"
-                    class="w-11 h-11 rounded-full bg-[#0D1B39] text-white flex items-center justify-center text-[22px] leading-none"
-                  >
-                    +
-                  </button>
-                </div>
+            <div class="p-3 bg-white border-1 rounded-b-xl">
+              <h6 class="text-xs text-[#8D8D8D] font-Gilroy">Chairs</h6>
+              <h6 class="font-bold text-[#0D1B39] font-Gilroy">Sakarias Armchair</h6>
+              <div class="text-yellow-600 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
+                   <div class="flex justify-between mt-4">
+            <div class="flex flex-row gap-0.5"><h6 class="text-[0.9rem] mb-[0.2rem] font-bold">$</h6>
+            <span class="text-[1.2rem] font-bold">392</span></div>
+            <i class="fa-solid fa-circle-plus text-2xl text-[#0D1B39]"></i>
+          </div>
             </div>
+          </div>
 
-            <!-- Card 2 -->
-            <div
-              class="w-[240px] rounded-[18px] overflow-hidden bg-white shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
-            >
-              <div class="h-[210px] bg-[#FAFAFA] flex items-end justify-center">
-                <img
-                  src="./assets/images/chair-2.png"
-                  alt="Baltsar Chair"
-                  class="h-[165px] w-[165px] object-contain drop-shadow-[0_28px_30px_rgba(0,0,0,0.15)]"
-                />
+          <!-- second div -->
+
+            <div>
+              <div class="bg-gray-100 border-1 p-4 rounded-t-xl shadow-md">
+                <img src="./assets/images/chair-1.png" class="h-[15rem] w-[15rem] object-contain">
               </div>
-
-              <div class="px-5 pt-4 pb-5">
-                <p class="text-[12px] text-[#8D8D8D] mb-1">Chair</p>
-                <h3
-                  class="text-[14px] font-semibold text-[#0D1B39] leading-snug"
-                >
-                  Baltsar Chair
-                </h3>
-
-                <div
-                  class="mt-2 flex items-center gap-1 text-[#F6B76A] text-[12px]"
-                >
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star text-[#F6B76A]/40"></i>
-                </div>
-
-                <div class="mt-6 flex items-center justify-between">
-                  <div class="text-[#0D1B39] font-semibold">
-                    <span class="text-[12px] align-top">$</span>
-                    <span class="text-[16px] ml-1">299</span>
-                  </div>
-
-                  <button
-                    aria-label="Add to cart"
-                    class="w-11 h-11 rounded-full bg-[#0D1B39] text-white flex items-center justify-center text-[22px] leading-none"
-                  >
-                    +
-                  </button>
-                </div>
+            <div class="p-3 bg-white border-1 rounded-b-xl">
+              <h6 class="text-xs text-[#8D8D8D]">Chairs</h6>
+              <h6 class="font-bold text-[#0D1B39]">Sakarias Armchair</h6>
+              <div class="text-yellow-600 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
+                   <div class="flex justify-between mt-4">
+            <div class="flex flex-row gap-0.5"><h6 class="text-[0.9rem] mb-[0.2rem] font-bold">$</h6>
+            <span class="text-[1.2rem] font-bold">392</span></div>
+            <i class="fa-solid fa-circle-plus text-2xl text-[#0D1B39]"></i>
+          </div>
             </div>
 
             <!-- Card 3 -->
@@ -474,38 +381,27 @@
                 />
               </div>
 
-              <div class="px-5 pt-4 pb-5">
-                <p class="text-[12px] text-[#8D8D8D] mb-1">Chair</p>
-                <h3
-                  class="text-[14px] font-semibold text-[#0D1B39] leading-snug"
-                >
-                  Anjay Chair
-                </h3>
+          <!-- third div -->
 
-                <div
-                  class="mt-2 flex items-center gap-1 text-[#F6B76A] text-[12px]"
-                >
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star text-[#F6B76A]/40"></i>
-                </div>
-
-                <div class="mt-6 flex items-center justify-between">
-                  <div class="text-[#0D1B39] font-semibold">
-                    <span class="text-[12px] align-top">$</span>
-                    <span class="text-[16px] ml-1">519</span>
-                  </div>
-
-                  <button
-                    aria-label="Add to cart"
-                    class="w-11 h-11 rounded-full bg-[#0D1B39] text-white flex items-center justify-center text-[22px] leading-none"
-                  >
-                    +
-                  </button>
-                </div>
+        <div>
+              <div class="bg-gray-100 border-1 p-4 rounded-t-xl shadow-md">
+                             <img src="./assets/images/chair-1.png" class="h-[15rem] w-[15rem] object-contain">
+</div>
+            <div class="p-3 bg-white border-1 rounded-b-xl">
+              <h6 class="text-xs text-[#8D8D8D]">Chairs</h6>
+              <h6 class="font-bold text-[#0D1B39]">Sakarias Armchair</h6>
+              <div class="text-yellow-600 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
+                   <div class="flex justify-between mt-4">
+            <div class="flex flex-row gap-0.5"><h6 class="text-[0.9rem] mb-[0.2rem] font-bold">$</h6>
+            <span class="text-[1.2rem] font-bold">392</span></div>
+            <i class="fa-solid fa-circle-plus text-2xl text-[#0D1B39]"></i>
+          </div>
             </div>
 
             <!-- Card 4 -->
@@ -520,38 +416,27 @@
                 />
               </div>
 
-              <div class="px-5 pt-4 pb-5">
-                <p class="text-[12px] text-[#8D8D8D] mb-1">Chair</p>
-                <h3
-                  class="text-[14px] font-semibold text-[#0D1B39] leading-snug"
-                >
-                  Nyantuy Chair
-                </h3>
+          <!-- fourth div -->
 
-                <div
-                  class="mt-2 flex items-center gap-1 text-[#F6B76A] text-[12px]"
-                >
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star text-[#F6B76A]/40"></i>
-                </div>
-
-                <div class="mt-6 flex items-center justify-between">
-                  <div class="text-[#0D1B39] font-semibold">
-                    <span class="text-[12px] align-top">$</span>
-                    <span class="text-[16px] ml-1">921</span>
-                  </div>
-
-                  <button
-                    aria-label="Add to cart"
-                    class="w-11 h-11 rounded-full bg-[#0D1B39] text-white flex items-center justify-center text-[22px] leading-none"
-                  >
-                    +
-                  </button>
-                </div>
+         <div>
+              <div class="bg-gray-100 border-1 p-4 rounded-t-xl shadow-md">
+                              <img src="./assets/images/chair-1.png" class="h-[15rem] w-[15rem] object-contain">
+</div>
+            <div class="p-3 bg-white border-1 rounded-b-xl">
+              <h6 class="text-xs text-[#8D8D8D]">Chairs</h6>
+              <h6 class="font-bold text-[#0D1B39]">Sakarias Armchair</h6>
+              <div class="text-yellow-600 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
+                   <div class="flex justify-between mt-4">
+            <div class="flex flex-row gap-0.5"><h6 class="text-[0.9rem] mb-[0.2rem] font-bold">$</h6>
+            <span class="text-[1.2rem] font-bold">392</span></div>
+            <i class="fa-solid fa-circle-plus text-2xl text-[#0D1B39]"></i>
+          </div>
             </div>
           </div>
         </div>
