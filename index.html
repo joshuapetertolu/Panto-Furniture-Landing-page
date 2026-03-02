@@ -65,12 +65,15 @@
   <body class="bg-[#ffffff] font-gilroy overflow-x-hidden">
     <!-- Hero & Header Wrapper -->
     <div
-      class="relative min-h-[850px] lg:min-h-[1000px] bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-cover bg-center"
+      class="relative min-h-[130vh] bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-cover bg-bottom"
     >
       <!-- Header Section -->
-      <header id="header" class="w-full absolute top-0 left-0 z-50">
+      <header
+        id="header"
+        class="w-full absolute top-0 left-0 z-50 transition-all duration-300"
+      >
         <nav
-          class="container mx-auto flex items-center justify-between py-10 px-6 lg:px-0"
+          class="container mx-auto flex items-center justify-between py-10 px-6 lg:px-0 transition-all duration-300"
         >
           <!-- Logo -->
           <div
@@ -1035,5 +1038,34 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const header = document.getElementById("header");
+      const nav = header.querySelector("nav");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add(
+            "fixed",
+            "bg-[#1E1E1E]/90",
+            "backdrop-blur-md",
+            "shadow-lg",
+          );
+          header.classList.remove("absolute");
+          nav.classList.remove("py-10");
+          nav.classList.add("py-5");
+        } else {
+          header.classList.remove(
+            "fixed",
+            "bg-[#1E1E1E]/90",
+            "backdrop-blur-md",
+            "shadow-lg",
+          );
+          header.classList.add("absolute");
+          nav.classList.remove("py-5");
+          nav.classList.add("py-10");
+        }
+      });
+    </script>
   </body>
 </html>
